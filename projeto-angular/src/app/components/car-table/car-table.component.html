@@ -1,0 +1,22 @@
+<table>
+    <thead>
+        <tr>
+            <th>Código - Vin</th>
+            <th>Odômetro</th>
+            <th>Nível de Combustível</th>
+            <th>Status</th>
+            <th>Lat.</th>
+            <th>Long.</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><input type="text" class="vin-code" placeholder="{{ vin }}"></td>
+            <td>{{ odometer }}KM</td>
+            <td>{{ fuelLevel }}%</td>
+            <td>{{ status.toLocaleUpperCase() }}</td>
+            <td>{{ lat }}</td>
+            <td>{{ long }}</td>
+        </tr>
+    </tbody>
+</table>

@@ -1,0 +1,19 @@
+<nav>
+    <button class="btn sidebar-btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample"></button>
+    <button class="logout-btn" (click)="logout()"></button>
+</nav>
+
+<div class="offcanvas offcanvas-start sidebar" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+  <div class="offcanvas-header sidebar__header">
+    <img src="/img/ford.png" alt="Logo da Ford" class="sidebar__logo" />
+    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+  <ul>
+    <li class="sidebar__link">
+      <a href="/home">Home</a>
+    </li>
+    <li class="sidebar__link">
+      <a href="/dashboard">Dashboard</a>
+    </li>
+  </ul>
+</div>

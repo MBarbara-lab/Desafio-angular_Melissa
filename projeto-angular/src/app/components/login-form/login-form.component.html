@@ -1,0 +1,29 @@
+<form [formGroup]="loginForm" (ngSubmit)="onSubmitLogin()" class="right-section__form">
+  <h1 class="form__title">Boas Vindas!</h1>
+
+  <div class="right-section__input-container">
+    <img src="/img/user-form.png" alt="Ícone de user" class="input-container__icon"/>
+    <input formControlName="username" type="text" placeholder="Insira seu nome de usuário" class="input-container__input"
+      required />
+    <img src="/img/info.png" alt="Ícone de informação" class="info-icon" />
+  </div>
+
+  <div class="right-section__input-container">
+    <img src="/img/lock.png" alt="Ícone de cadeado" class="input-container__icon" />
+    <input formControlName="password" type="password" placeholder="Insira sua senha" class="input-container__input"
+      required />
+    <img src="/img/info.png" alt="Ícone de informação" class="info-icon" />
+  </div>
+
+  <div class="form__auto-login">
+    <label for="">Logar automaticamente</label>
+    <div>
+      <div class="form-check form-switch">
+        <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
+      </div>
+      <img src="/img/info.png" alt="Ícone de informação" class="info-icon" />
+    </div>
+  </div>
+
+  <button type="submit" class="form__button">Entrar</button>
+</form>

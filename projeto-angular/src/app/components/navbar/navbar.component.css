@@ -1,0 +1,80 @@
+nav {
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2vh;
+  width: 100vw;
+}
+
+.sidebar-btn,
+.logout-btn {
+  background-size: contain;
+  background-color: #FFF;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  width: 3vh;
+  height: 3vh;
+  border: none;
+}
+
+.sidebar-btn {
+  background-image: url(/img/menu.png);
+}
+
+.logout-btn {
+  background-image: url(/img/logout.png);
+}
+
+.sidebar {
+  width: 30vw;
+}
+
+.sidebar__logo {
+  width: 30%;
+}
+
+.sidebar__body {
+  display: flex;
+  flex-direction: column;
+  column-gap: 1vh;
+}
+
+.sidebar__link {
+  padding: 2vh 5vh;
+  background-color: #adadad;
+  color: var(--blue);
+  font-weight: 500;
+}
+
+.sidebar__link>a {
+  text-decoration: none;
+}
+
+/* REVERTING BOOTSTRAP */
+ol,
+ul {
+  padding-left: 0;
+}
+
+ol,
+ul,
+dl {
+  margin: 0;
+}
+
+@media all and (max-width: 670px) {
+  .sidebar {
+    width: 40vw
+  }
+
+  .sidebar__logo {
+    width: 50%;
+  }
+
+  .sidebar__link {
+    padding: 2vh 2vh;
+
+  }
+}

@@ -1,0 +1,43 @@
+:host {
+  height: 100vh;
+  min-width: 100vw;
+  display: flex;
+}
+
+.left-section {
+width: 50vw;
+align-content: center;
+}
+
+.left-section__ranger {
+width: 90%;
+}
+
+.right-section {
+width: 50vw;
+padding: 3vh;
+display: grid;
+grid-template-rows: 10vh ;
+justify-items: center;
+align-items: center;
+background-color: #f7f7f7;
+}
+
+.right-section__logo{
+  width: 25%;
+}
+
+@media all and (max-width: 670px) {
+
+.left-section {
+  display: none;
+}
+
+.right-section {
+  width: 100vw;
+}
+
+.right-section__logo {
+  width: 50%;
+}
+}

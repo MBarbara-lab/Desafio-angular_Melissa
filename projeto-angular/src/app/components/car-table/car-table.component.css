@@ -1,0 +1,21 @@
+table {
+  width: 100vw;
+  border-bottom: 2vh solid var(--dark-blue);
+}
+
+thead {
+  background-color: var(--dark-blue);
+  color: #FFF;
+}
+
+th,
+td {
+  padding: 1vh 2vh;
+  border: none;
+}
+
+.vin-code {
+  border: 2px solid #A7A5A5;
+  width: 70%;
+  justify-self: center;
+}
